@@ -56,6 +56,3 @@ That's it
 #### My FastAPI Captured
 ![Circle](captured/redoc.png "Create New User")
 ![Circle](captured/swagger.png "Get All User")
-
-<hr />
-`This Documentation would be update soon!`
