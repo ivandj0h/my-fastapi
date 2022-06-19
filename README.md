@@ -12,5 +12,9 @@ Make sure you already have `Python` installed in your computer.
 
 you can use `pip` to install any dependencies and you've to creating `environment` in your computer.
 
+#### My FastAPI Captured
+![Circle](captured/redoc.png "Create New User")
+![Circle](captured/swagger.png "Get All User")
+
 <hr />
 `This Documentation would be update soon!`
