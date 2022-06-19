@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from models import Gender, User, Role
 app = FastAPI()
 
+# The Models
 db: List[User] = [
     User(id=uuid4(),
          first_name="Admin",
@@ -20,6 +21,8 @@ db: List[User] = [
 
 ]
 
+# The Endpoints
+
 
 @app.get("/")
 async def root():
@@ -29,3 +32,9 @@ async def root():
 @app.get("/api/v1/users")
 async def get_all_users():
     return db
+
+
+@app.post("/api/v1/users")
+async def create_user(user: User):
+    db.append(user)
+    return user
