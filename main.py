@@ -16,11 +16,16 @@ db: List[User] = [
          last_name="Admin",
          gender=Gender.male,
          roles=[Role.admin, Role.user]
-         ),
+         )
 
 ]
 
 
 @app.get("/")
-def root():
+async def root():
     return {"message": "Hello Ivan"}
+
+
+@app.get("/api/v1/users")
+async def get_all_users():
+    return db
